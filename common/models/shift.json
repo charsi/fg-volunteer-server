@@ -1,0 +1,41 @@
+{
+  "name": "shift",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "assignedTo": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "subType": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "startTime": {
+      "type": "string",
+      "required": true
+    },
+    "endTime": {
+      "type": "string",
+      "required": true
+    },
+    "trainingAvailable": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
